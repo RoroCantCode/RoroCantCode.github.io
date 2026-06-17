@@ -1733,9 +1733,8 @@ input, select, textarea {
 
 	.about-gallery {
 		margin-top: 1.75rem;
-		max-width: 22rem;
-		margin-left: auto;
-		margin-right: auto;
+		width: 100%;
+		max-width: 100%;
 	}
 
 	.about-gallery-row {
@@ -1760,11 +1759,15 @@ input, select, textarea {
 
 	.about-gallery-item img {
 		width: 100%;
-		height: 5.5rem;
+		height: 7.5rem;
 		display: block;
 		border-radius: 4px;
 		object-fit: cover;
 		object-position: center;
+	}
+
+	.about-gallery-row:last-child .about-gallery-item img {
+		object-position: top center;
 	}
 
 	.about-gallery-item figcaption {
@@ -1828,16 +1831,12 @@ input, select, textarea {
 			font-size: 0.68rem;
 		}
 
-		.about-gallery {
-			max-width: 18rem;
-		}
-
 		.about-gallery-row {
 			gap: 0.5rem;
 		}
 
 		.about-gallery-item img {
-			height: 4.75rem;
+			height: 6.25rem;
 		}
 
 		.about-gallery-item figcaption {
