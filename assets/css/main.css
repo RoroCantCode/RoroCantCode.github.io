@@ -1733,6 +1733,9 @@ input, select, textarea {
 
 	.about-gallery {
 		margin-top: 1.75rem;
+		max-width: 22rem;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.about-gallery-row {
@@ -1752,14 +1755,16 @@ input, select, textarea {
 		flex: 1;
 		margin: 0;
 		min-width: 0;
+		max-width: 50%;
 	}
 
 	.about-gallery-item img {
 		width: 100%;
-		height: auto;
+		height: 5.5rem;
 		display: block;
 		border-radius: 4px;
 		object-fit: cover;
+		object-position: center;
 	}
 
 	.about-gallery-item figcaption {
@@ -1823,8 +1828,16 @@ input, select, textarea {
 			font-size: 0.68rem;
 		}
 
+		.about-gallery {
+			max-width: 18rem;
+		}
+
 		.about-gallery-row {
 			gap: 0.5rem;
+		}
+
+		.about-gallery-item img {
+			height: 4.75rem;
 		}
 
 		.about-gallery-item figcaption {
